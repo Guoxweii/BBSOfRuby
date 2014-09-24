@@ -13,7 +13,7 @@
 		BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10230919D1C13400C68F93 /* Images.xcassets */; };
 		BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10230B19D1C13400C68F93 /* LaunchScreen.xib */; };
 		BC10231919D1C13400C68F93 /* BBSOfRubyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */; };
-		BC10232519D1D13800C68F93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC10232419D1D13800C68F93 /* Default-568h@2x.png */; };
+		BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC10232819D24A2000C68F93 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		BC10231219D1C13400C68F93 /* BBSOfRubyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBSOfRubyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC10231719D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBSOfRubyTests.swift; sourceTree = "<group>"; };
-		BC10232419D1D13800C68F93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BC10232819D24A2000C68F93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		BC1022FF19D1C13400C68F93 /* BBSOfRuby */ = {
 			isa = PBXGroup;
 			children = (
-				BC10232419D1D13800C68F93 /* Default-568h@2x.png */,
+				BC10232819D24A2000C68F93 /* Default-568h@2x.png */,
 				BC10230219D1C13400C68F93 /* AppDelegate.swift */,
 				BC10230419D1C13400C68F93 /* ViewController.swift */,
 				BC10230619D1C13400C68F93 /* Main.storyboard */,
@@ -196,7 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC10232519D1D13800C68F93 /* Default-568h@2x.png in Resources */,
+				BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */,
 				BC10230819D1C13400C68F93 /* Main.storyboard in Resources */,
 				BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */,
 				BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */,
