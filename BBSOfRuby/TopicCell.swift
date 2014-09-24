@@ -10,6 +10,11 @@ import UIKit
 
 class TopicCell: UITableViewCell {
 
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var replyNumber: UILabel!
+    @IBOutlet weak var createTime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		605FDFF3B98B41D2A18C0261 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D485F6C769694FB18C17FC31 /* libPods.a */; };
 		BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10230219D1C13400C68F93 /* AppDelegate.swift */; };
 		BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10230919D1C13400C68F93 /* Images.xcassets */; };
 		BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10230B19D1C13400C68F93 /* LaunchScreen.xib */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910ED7D8A70D4B21864C0380 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BC1022FD19D1C13400C68F93 /* BBSOfRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSOfRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC10230119D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC10230219D1C13400C68F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		BC1ED03719D278D0007DA5EA /* TopicTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicTableViewController.xib; sourceTree = "<group>"; };
 		BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
+		BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-headers.h"; sourceTree = "<group>"; };
+		D485F6C769694FB18C17FC31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605FDFF3B98B41D2A18C0261 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,8 @@
 				BC1022FF19D1C13400C68F93 /* BBSOfRuby */,
 				BC10231519D1C13400C68F93 /* BBSOfRubyTests */,
 				BC1022FE19D1C13400C68F93 /* Products */,
+				910ED7D8A70D4B21864C0380 /* Pods.xcconfig */,
+				E8EB74B0C2A445EB8A872629 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +101,7 @@
 				BC10230B19D1C13400C68F93 /* LaunchScreen.xib */,
 				BC1ECFF919D26542007DA5EA /* resources */,
 				BC10230019D1C13400C68F93 /* Supporting Files */,
+				BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */,
 			);
 			path = BBSOfRuby;
 			sourceTree = "<group>";
@@ -159,6 +167,14 @@
 			name = views;
 			sourceTree = "<group>";
 		};
+		E8EB74B0C2A445EB8A872629 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D485F6C769694FB18C17FC31 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC10231C19D1C13400C68F93 /* Build configuration list for PBXNativeTarget "BBSOfRuby" */;
 			buildPhases = (
+				F572E1461DA44CA4BB59A597 /* Check Pods Manifest.lock */,
 				BC1022F919D1C13400C68F93 /* Sources */,
 				BC1022FA19D1C13400C68F93 /* Frameworks */,
 				BC1022FB19D1C13400C68F93 /* Resources */,
+				70FDC95CAC8A43D2A266D9DB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +274,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70FDC95CAC8A43D2A266D9DB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F572E1461DA44CA4BB59A597 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC1022F919D1C13400C68F93 /* Sources */ = {
@@ -379,6 +430,7 @@
 		};
 		BC10231D19D1C13400C68F93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910ED7D8A70D4B21864C0380 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -386,11 +438,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BBSOfRuby/app-Bridging-headers.h";
 			};
 			name = Debug;
 		};
 		BC10231E19D1C13400C68F93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910ED7D8A70D4B21864C0380 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -398,6 +452,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BBSOfRuby/app-Bridging-headers.h";
 			};
 			name = Release;
 		};
