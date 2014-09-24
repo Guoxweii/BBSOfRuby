@@ -52,10 +52,28 @@ class TopicTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if let dataArray = self.tableData {
+            var titleObject: AnyObject? = dataArray[indexPath.row]["title"]
+            var title = titleObject as NSString?
+            
+            var attributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 15 )]
+            
+            var width = UIScreen.mainScreen().applicationFrame.size.width - 42//TODO 需重写
+            
+            var rect = title?.boundingRectWithSize(CGSize(width: width, height: 105), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil)
+
+            if(rect?.height < 34) {
+                return 87
+            }
+        }
         return 105
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 10
     }
     
@@ -85,6 +103,10 @@ class TopicTableViewController: UITableViewController {
             
             var avatarObject: AnyObject? = userDic["avatar_url"]
             var avatar = avatarObject as String?
+            if let logo_url = avatar {
+                cell.avatar.sd_setImageWithURL(NSURL(string: logo_url), placeholderImage: UIImage(named: "user.png"))
+                
+            }
         }
         
         return cell
