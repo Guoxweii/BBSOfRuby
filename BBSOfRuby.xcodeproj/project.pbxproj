@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10230219D1C13400C68F93 /* AppDelegate.swift */; };
-		BC10230519D1C13400C68F93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10230419D1C13400C68F93 /* ViewController.swift */; };
-		BC10230819D1C13400C68F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC10230619D1C13400C68F93 /* Main.storyboard */; };
 		BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10230919D1C13400C68F93 /* Images.xcassets */; };
 		BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10230B19D1C13400C68F93 /* LaunchScreen.xib */; };
 		BC10231919D1C13400C68F93 /* BBSOfRubyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */; };
 		BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC10232819D24A2000C68F93 /* Default-568h@2x.png */; };
+		BC1ED03319D27743007DA5EA /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03219D27743007DA5EA /* ApplicationController.swift */; };
+		BC1ED03519D2778B007DA5EA /* TopicNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03419D2778B007DA5EA /* TopicNaviController.swift */; };
+		BC1ED03819D278D0007DA5EA /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03619D278D0007DA5EA /* TopicTableViewController.swift */; };
+		BC1ED03919D278D0007DA5EA /* TopicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03719D278D0007DA5EA /* TopicTableViewController.xib */; };
+		BC1ED03D19D2B88D007DA5EA /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */; };
+		BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +34,18 @@
 		BC1022FD19D1C13400C68F93 /* BBSOfRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSOfRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC10230119D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC10230219D1C13400C68F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC10230419D1C13400C68F93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC10230719D1C13400C68F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC10230919D1C13400C68F93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC10230C19D1C13400C68F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BC10231219D1C13400C68F93 /* BBSOfRubyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBSOfRubyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC10231719D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBSOfRubyTests.swift; sourceTree = "<group>"; };
 		BC10232819D24A2000C68F93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BC1ED03219D27743007DA5EA /* ApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		BC1ED03419D2778B007DA5EA /* TopicNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicNaviController.swift; sourceTree = "<group>"; };
+		BC1ED03619D278D0007DA5EA /* TopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
+		BC1ED03719D278D0007DA5EA /* TopicTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicTableViewController.xib; sourceTree = "<group>"; };
+		BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
+		BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +87,12 @@
 		BC1022FF19D1C13400C68F93 /* BBSOfRuby */ = {
 			isa = PBXGroup;
 			children = (
-				BC10232819D24A2000C68F93 /* Default-568h@2x.png */,
+				BC1ED03A19D2B85D007DA5EA /* views */,
+				BC1ECFFA19D26560007DA5EA /* controllers */,
 				BC10230219D1C13400C68F93 /* AppDelegate.swift */,
-				BC10230419D1C13400C68F93 /* ViewController.swift */,
-				BC10230619D1C13400C68F93 /* Main.storyboard */,
 				BC10230919D1C13400C68F93 /* Images.xcassets */,
 				BC10230B19D1C13400C68F93 /* LaunchScreen.xib */,
+				BC1ECFF919D26542007DA5EA /* resources */,
 				BC10230019D1C13400C68F93 /* Supporting Files */,
 			);
 			path = BBSOfRuby;
@@ -113,6 +121,42 @@
 				BC10231719D1C13400C68F93 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC1ECFF919D26542007DA5EA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC10232819D24A2000C68F93 /* Default-568h@2x.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		BC1ECFFA19D26560007DA5EA /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC1ED02F19D26D30007DA5EA /* topics */,
+				BC1ED03219D27743007DA5EA /* ApplicationController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		BC1ED02F19D26D30007DA5EA /* topics */ = {
+			isa = PBXGroup;
+			children = (
+				BC1ED03419D2778B007DA5EA /* TopicNaviController.swift */,
+				BC1ED03619D278D0007DA5EA /* TopicTableViewController.swift */,
+				BC1ED03719D278D0007DA5EA /* TopicTableViewController.xib */,
+			);
+			name = topics;
+			sourceTree = "<group>";
+		};
+		BC1ED03A19D2B85D007DA5EA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */,
+				BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */,
-				BC10230819D1C13400C68F93 /* Main.storyboard in Resources */,
 				BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */,
+				BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */,
 				BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */,
+				BC1ED03919D278D0007DA5EA /* TopicTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC10230519D1C13400C68F93 /* ViewController.swift in Sources */,
+				BC1ED03319D27743007DA5EA /* ApplicationController.swift in Sources */,
 				BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */,
+				BC1ED03519D2778B007DA5EA /* TopicNaviController.swift in Sources */,
+				BC1ED03D19D2B88D007DA5EA /* TopicCell.swift in Sources */,
+				BC1ED03819D278D0007DA5EA /* TopicTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC10230619D1C13400C68F93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC10230719D1C13400C68F93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC10230B19D1C13400C68F93 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
