@@ -57,7 +57,6 @@ class TopicTableViewController: UITableViewController {
             var title = titleObject as NSString?
             
             var attributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 15 )]
-            
             var width = UIScreen.mainScreen().applicationFrame.size.width - 42//TODO 需重写
             
             var rect = title?.boundingRectWithSize(CGSize(width: width, height: 105), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil)
@@ -105,11 +104,22 @@ class TopicTableViewController: UITableViewController {
             var avatar = avatarObject as String?
             if let logo_url = avatar {
                 cell.avatar.sd_setImageWithURL(NSURL(string: logo_url), placeholderImage: UIImage(named: "user.png"))
-                
             }
         }
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var commentListCtr = CommentListViewController(nibName: "CommentListViewController", bundle: nil)
+        
+        if let dataArray = self.tableData {
+            var idObject: AnyObject? = dataArray[indexPath.row]["id"]
+            var id = idObject as NSNumber!
+            commentListCtr.topicId = id
+        }
+        
+        self.navigationController?.pushViewController(commentListCtr, animated: true)
     }
     
 }

@@ -13,12 +13,18 @@
 		BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10230B19D1C13400C68F93 /* LaunchScreen.xib */; };
 		BC10231919D1C13400C68F93 /* BBSOfRubyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */; };
 		BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC10232819D24A2000C68F93 /* Default-568h@2x.png */; };
+		BC1CB21619D3B29E00D3ADBD /* CommentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1CB21419D3B29E00D3ADBD /* CommentListViewController.swift */; };
+		BC1CB21719D3B29E00D3ADBD /* CommentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1CB21519D3B29E00D3ADBD /* CommentListViewController.xib */; };
 		BC1ED03319D27743007DA5EA /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03219D27743007DA5EA /* ApplicationController.swift */; };
 		BC1ED03519D2778B007DA5EA /* TopicNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03419D2778B007DA5EA /* TopicNaviController.swift */; };
 		BC1ED03819D278D0007DA5EA /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03619D278D0007DA5EA /* TopicTableViewController.swift */; };
 		BC1ED03919D278D0007DA5EA /* TopicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03719D278D0007DA5EA /* TopicTableViewController.xib */; };
 		BC1ED03D19D2B88D007DA5EA /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */; };
 		BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */; };
+		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
+		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
+		BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0ACE919D3EBD3002094AA /* CommentCell.swift */; };
+		BCE0ACEC19D3EBD3002094AA /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,8 @@
 		BC10231719D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBSOfRubyTests.swift; sourceTree = "<group>"; };
 		BC10232819D24A2000C68F93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BC1CB21419D3B29E00D3ADBD /* CommentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentListViewController.swift; sourceTree = "<group>"; };
+		BC1CB21519D3B29E00D3ADBD /* CommentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentListViewController.xib; sourceTree = "<group>"; };
 		BC1ED03219D27743007DA5EA /* ApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		BC1ED03419D2778B007DA5EA /* TopicNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicNaviController.swift; sourceTree = "<group>"; };
 		BC1ED03619D278D0007DA5EA /* TopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-headers.h"; sourceTree = "<group>"; };
+		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
+		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
+		BCE0ACE919D3EBD3002094AA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		D485F6C769694FB18C17FC31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +166,8 @@
 				BC1ED03419D2778B007DA5EA /* TopicNaviController.swift */,
 				BC1ED03619D278D0007DA5EA /* TopicTableViewController.swift */,
 				BC1ED03719D278D0007DA5EA /* TopicTableViewController.xib */,
+				BC1CB21419D3B29E00D3ADBD /* CommentListViewController.swift */,
+				BC1CB21519D3B29E00D3ADBD /* CommentListViewController.xib */,
 			);
 			name = topics;
 			sourceTree = "<group>";
@@ -163,6 +177,10 @@
 			children = (
 				BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */,
 				BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */,
+				BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */,
+				BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */,
+				BCE0ACE919D3EBD3002094AA /* CommentCell.swift */,
+				BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -260,6 +278,9 @@
 			files = (
 				BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */,
 				BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */,
+				BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */,
+				BCE0ACEC19D3EBD3002094AA /* CommentCell.xib in Resources */,
+				BC1CB21719D3B29E00D3ADBD /* CommentListViewController.xib in Resources */,
 				BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */,
 				BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */,
 				BC1ED03919D278D0007DA5EA /* TopicTableViewController.xib in Resources */,
@@ -317,7 +338,10 @@
 				BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */,
 				BC1ED03519D2778B007DA5EA /* TopicNaviController.swift in Sources */,
 				BC1ED03D19D2B88D007DA5EA /* TopicCell.swift in Sources */,
+				BC1CB21619D3B29E00D3ADBD /* CommentListViewController.swift in Sources */,
+				BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */,
 				BC1ED03819D278D0007DA5EA /* TopicTableViewController.swift in Sources */,
+				BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
