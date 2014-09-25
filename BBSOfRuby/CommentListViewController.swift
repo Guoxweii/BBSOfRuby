@@ -154,7 +154,7 @@ class CommentListViewController: UITableViewController {
         var bodyRect = body?.boundingRectWithSize(CGSize(width: width, height: 10000), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: bodyattributes, context: nil)
         var bodyHeight = bodyRect?.height as CGFloat!
         
-        return titleHeight + bodyHeight + 64
+        return titleHeight + bodyHeight + 75
     }
     
     func setCommentHeight(indexPath: NSIndexPath) -> CGFloat {

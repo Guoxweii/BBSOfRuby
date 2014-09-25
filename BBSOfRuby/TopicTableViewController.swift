@@ -10,12 +10,18 @@ import UIKit
 
 class TopicTableViewController: UITableViewController {
     
+    @IBOutlet var refreshButton: UIButton!
     var tableData: Array<Dictionary<String,AnyObject>>?
+    
+    @IBAction func refresh(sender: UIButton) {
+        self.refreshDataFromApi()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "精华贴"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: self.refreshButton!)
         
         self.tableData = nil
         
@@ -23,6 +29,10 @@ class TopicTableViewController: UITableViewController {
         let nib = UINib(nibName: baseName, bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: baseName)
         
+        self.refreshDataFromApi()
+    }
+    
+    func refreshDataFromApi() {
         let url = NSURL(string: "https://ruby-china.org/api/topics.json")
         var request = NSURLRequest(URL: url)
         var operation = AFHTTPRequestOperation(request: request)
