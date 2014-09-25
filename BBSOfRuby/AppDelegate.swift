@@ -20,10 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
         self.window!.backgroundColor = UIColor.whiteColor()
+        self.setDefaultSetting()
         self.window!.rootViewController = ApplicationController();
         self.window!.makeKeyAndVisible()
         
         return true
+    }
+    
+    func setDefaultSetting() {
+        UITabBar.appearance().barTintColor = UIColor(red: 0.94, green: 0.94, blue: 0.96, alpha: 1)
     }
 
     func applicationWillResignActive(application: UIApplication) {
