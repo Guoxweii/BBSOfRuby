@@ -25,6 +25,7 @@
 		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
 		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
 		BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */; };
+		BC95B2FA19D69FAE009E0C5B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F919D69FAE009E0C5B /* Comment.swift */; };
 		BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0ACE919D3EBD3002094AA /* CommentCell.swift */; };
 		BCE0ACEC19D3EBD3002094AA /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
 		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
 		BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
+		BC95B2F919D69FAE009E0C5B /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BCE0ACE919D3EBD3002094AA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		D485F6C769694FB18C17FC31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 			children = (
 				BC07F87E19D6570400CB72F0 /* Topic.swift */,
 				BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */,
+				BC95B2F919D69FAE009E0C5B /* Comment.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				BC1CB21619D3B29E00D3ADBD /* CommentListViewController.swift in Sources */,
 				BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */,
 				BC1ED03819D278D0007DA5EA /* TopicTableViewController.swift in Sources */,
+				BC95B2FA19D69FAE009E0C5B /* Comment.swift in Sources */,
 				BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
