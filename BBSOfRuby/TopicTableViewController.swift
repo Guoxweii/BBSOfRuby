@@ -11,7 +11,7 @@ import UIKit
 class TopicTableViewController: UITableViewController {
     
     @IBOutlet var refreshButton: UIButton!
-    var tableData: Array<Dictionary<String,AnyObject>>?
+    var tableData: Array<Topic>?
     
     @IBAction func refresh(sender: UIButton) {
         self.refreshDataFromApi()
@@ -33,20 +33,10 @@ class TopicTableViewController: UITableViewController {
     }
     
     func refreshDataFromApi() {
-        let url = NSURL(string: "https://ruby-china.org/api/topics.json")
-        var request = NSURLRequest(URL: url)
-        var operation = AFHTTPRequestOperation(request: request)
-        operation.responseSerializer = AFJSONResponseSerializer()
-        operation.setCompletionBlockWithSuccess(
-            { (operation: AFHTTPRequestOperation!,responseObject: AnyObject!) -> Void in
-                self.tableData = responseObject as? Array<Dictionary<String, AnyObject>>
-                self.tableView.reloadData()
-            },
-            failure: {(operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                println("error happen")
-            }
-        )
-        NSOperationQueue.mainQueue().addOperation(operation)
+        Topic.list({ (responseObject: AnyObject!) -> Void in
+            self.tableData = responseObject as? Array<Topic>
+            self.tableView.reloadData()
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,8 +53,8 @@ class TopicTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if let dataArray = self.tableData {
-            var titleObject: AnyObject? = dataArray[indexPath.row]["title"]
-            var title = titleObject as NSString?
+            var topic = dataArray[indexPath.row]
+            var title = topic.title
             
             var attributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 15 )]
             var width = UIScreen.mainScreen().applicationFrame.size.width - 42//TODO 需重写
@@ -90,30 +80,14 @@ class TopicTableViewController: UITableViewController {
         let baseName = "TopicCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(baseName, forIndexPath: indexPath) as TopicCell
         if let dataArray = self.tableData {
-            var data = dataArray[indexPath.row]
+            var topic = dataArray[indexPath.row] as Topic
             
-            var titleObject: AnyObject? = data["title"]
-            var title = titleObject as String?
-            cell.title.text = title?
-            
-            var createdAtObject: AnyObject? = data["created_at"]
-            var created_at = createdAtObject as String?
-            cell.createTime.text = created_at?
-            
-            var reliesCountObject: AnyObject? = data["replies_count"]
-            var replies_count = reliesCountObject as Int!
-            cell.replyNumber.text = "\(replies_count)"
-            
-            var userInfo: AnyObject? = data["user"]
-            var userDic = userInfo as Dictionary<String, AnyObject>
-            var nameObject: AnyObject? = userDic["login"]
-            var name = nameObject as String?
-            cell.name.text = name
-            
-            var avatarObject: AnyObject? = userDic["avatar_url"]
-            var avatar = avatarObject as String?
-            if let logo_url = avatar {
-                cell.avatar.sd_setImageWithURL(NSURL(string: logo_url), placeholderImage: UIImage(named: "user.png"))
+            cell.title.text = topic.title
+            cell.createTime.text = topic.created_at
+            cell.replyNumber.text = "\(topic.replies_count!)"
+            cell.name.text = topic.name
+            if let avatar_url = topic.avatar {
+                cell.avatar.sd_setImageWithURL(NSURL(string: avatar_url), placeholderImage: UIImage(named: "user.png"))
             }
         }
         
@@ -124,9 +98,8 @@ class TopicTableViewController: UITableViewController {
         var commentListCtr = CommentListViewController(nibName: "CommentListViewController", bundle: nil)
         
         if let dataArray = self.tableData {
-            var idObject: AnyObject? = dataArray[indexPath.row]["id"]
-            var id = idObject as NSNumber!
-            commentListCtr.topicId = id
+             var topic = dataArray[indexPath.row]
+            commentListCtr.topicId = topic.id
         }
         
         self.navigationController?.pushViewController(commentListCtr, animated: true)

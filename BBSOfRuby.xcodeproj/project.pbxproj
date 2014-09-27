@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		605FDFF3B98B41D2A18C0261 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D485F6C769694FB18C17FC31 /* libPods.a */; };
+		BC07F87F19D6570400CB72F0 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07F87E19D6570400CB72F0 /* Topic.swift */; };
 		BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10230219D1C13400C68F93 /* AppDelegate.swift */; };
 		BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10230919D1C13400C68F93 /* Images.xcassets */; };
 		BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10230B19D1C13400C68F93 /* LaunchScreen.xib */; };
@@ -23,6 +24,7 @@
 		BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */; };
 		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
 		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
+		BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */; };
 		BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0ACE919D3EBD3002094AA /* CommentCell.swift */; };
 		BCE0ACEC19D3EBD3002094AA /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		910ED7D8A70D4B21864C0380 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BC07F87E19D6570400CB72F0 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		BC1022FD19D1C13400C68F93 /* BBSOfRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSOfRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC10230119D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC10230219D1C13400C68F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-headers.h"; sourceTree = "<group>"; };
 		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
 		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
+		BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
 		BCE0ACE919D3EBD3002094AA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		D485F6C769694FB18C17FC31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC07F87D19D656E000CB72F0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BC07F87E19D6570400CB72F0 /* Topic.swift */,
+				BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		BC1022F419D1C13400C68F93 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +119,7 @@
 		BC1022FF19D1C13400C68F93 /* BBSOfRuby */ = {
 			isa = PBXGroup;
 			children = (
+				BC07F87D19D656E000CB72F0 /* models */,
 				BC1ED03A19D2B85D007DA5EA /* views */,
 				BC1ECFFA19D26560007DA5EA /* controllers */,
 				BC10230219D1C13400C68F93 /* AppDelegate.swift */,
@@ -335,8 +349,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1ED03319D27743007DA5EA /* ApplicationController.swift in Sources */,
+				BC07F87F19D6570400CB72F0 /* Topic.swift in Sources */,
 				BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */,
 				BC1ED03519D2778B007DA5EA /* TopicNaviController.swift in Sources */,
+				BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */,
 				BC1ED03D19D2B88D007DA5EA /* TopicCell.swift in Sources */,
 				BC1CB21619D3B29E00D3ADBD /* CommentListViewController.swift in Sources */,
 				BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */,
