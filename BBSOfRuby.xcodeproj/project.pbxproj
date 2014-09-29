@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		605FDFF3B98B41D2A18C0261 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D485F6C769694FB18C17FC31 /* libPods.a */; };
+		7A504052C7D04DBF909E40CB /* libPods-BBSOfRubyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54400DDA45334D7497C11AC8 /* libPods-BBSOfRubyTests.a */; };
 		BC07F87F19D6570400CB72F0 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07F87E19D6570400CB72F0 /* Topic.swift */; };
 		BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10230219D1C13400C68F93 /* AppDelegate.swift */; };
 		BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10230919D1C13400C68F93 /* Images.xcassets */; };
@@ -24,6 +25,7 @@
 		BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */; };
 		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
 		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
+		BC5FEF7319D8EF3100BF9BDA /* FirstSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5FEF7219D8EF3100BF9BDA /* FirstSpec.m */; };
 		BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */; };
 		BC95B2FA19D69FAE009E0C5B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F919D69FAE009E0C5B /* Comment.swift */; };
 		BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0ACE919D3EBD3002094AA /* CommentCell.swift */; };
@@ -41,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54400DDA45334D7497C11AC8 /* libPods-BBSOfRubyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BBSOfRubyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		910ED7D8A70D4B21864C0380 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBSOfRubyTests.xcconfig"; path = "Pods/Pods-BBSOfRubyTests.xcconfig"; sourceTree = "<group>"; };
 		BC07F87E19D6570400CB72F0 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		BC1022FD19D1C13400C68F93 /* BBSOfRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSOfRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC10230119D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-headers.h"; sourceTree = "<group>"; };
 		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
 		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
+		BC5FEF7219D8EF3100BF9BDA /* FirstSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstSpec.m; sourceTree = "<group>"; };
 		BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
 		BC95B2F919D69FAE009E0C5B /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BCE0ACE919D3EBD3002094AA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A504052C7D04DBF909E40CB /* libPods-BBSOfRubyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,11 +108,13 @@
 		BC1022F419D1C13400C68F93 = {
 			isa = PBXGroup;
 			children = (
+				BC5FEF7119D8EF1700BF9BDA /* spec */,
 				BC1022FF19D1C13400C68F93 /* BBSOfRuby */,
 				BC10231519D1C13400C68F93 /* BBSOfRubyTests */,
 				BC1022FE19D1C13400C68F93 /* Products */,
 				910ED7D8A70D4B21864C0380 /* Pods.xcconfig */,
 				E8EB74B0C2A445EB8A872629 /* Frameworks */,
+				AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,10 +210,19 @@
 			name = views;
 			sourceTree = "<group>";
 		};
+		BC5FEF7119D8EF1700BF9BDA /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				BC5FEF7219D8EF3100BF9BDA /* FirstSpec.m */,
+			);
+			name = spec;
+			sourceTree = "<group>";
+		};
 		E8EB74B0C2A445EB8A872629 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D485F6C769694FB18C17FC31 /* libPods.a */,
+				54400DDA45334D7497C11AC8 /* libPods-BBSOfRubyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC10231F19D1C13400C68F93 /* Build configuration list for PBXNativeTarget "BBSOfRubyTests" */;
 			buildPhases = (
+				44ED4192299A4124A86C281F /* Check Pods Manifest.lock */,
 				BC10230E19D1C13400C68F93 /* Sources */,
 				BC10230F19D1C13400C68F93 /* Frameworks */,
 				BC10231019D1C13400C68F93 /* Resources */,
+				F46D9311D757437198F44CCA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +333,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		44ED4192299A4124A86C281F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		70FDC95CAC8A43D2A266D9DB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +361,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46D9311D757437198F44CCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BBSOfRubyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F572E1461DA44CA4BB59A597 /* Check Pods Manifest.lock */ = {
@@ -370,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC10231919D1C13400C68F93 /* BBSOfRubyTests.swift in Sources */,
+				BC5FEF7319D8EF3100BF9BDA /* FirstSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,8 +552,10 @@
 		};
 		BC10232019D1C13400C68F93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -515,14 +567,18 @@
 				INFOPLIST_FILE = BBSOfRubyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBSOfRuby.app/BBSOfRuby";
 			};
 			name = Debug;
 		};
 		BC10232119D1C13400C68F93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -530,6 +586,7 @@
 				INFOPLIST_FILE = BBSOfRubyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBSOfRuby.app/BBSOfRuby";
 			};
 			name = Release;
