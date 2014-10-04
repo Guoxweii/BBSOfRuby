@@ -23,6 +23,10 @@
 		BC1ED03919D278D0007DA5EA /* TopicTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03719D278D0007DA5EA /* TopicTableViewController.xib */; };
 		BC1ED03D19D2B88D007DA5EA /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */; };
 		BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */; };
+		BC28317619E0416100D0573B /* JobNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28317519E0416100D0573B /* JobNaviController.swift */; };
+		BC28317D19E0475800D0573B /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28317B19E0475800D0573B /* JobTableViewController.swift */; };
+		BC28317E19E0475800D0573B /* JobTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC28317C19E0475800D0573B /* JobTableViewController.xib */; };
+		BC28318019E04E7800D0573B /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28317F19E04E7800D0573B /* Job.swift */; };
 		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
 		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
 		BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */; };
@@ -64,6 +68,10 @@
 		BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-headers.h"; sourceTree = "<group>"; };
+		BC28317519E0416100D0573B /* JobNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobNaviController.swift; sourceTree = "<group>"; };
+		BC28317B19E0475800D0573B /* JobTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
+		BC28317C19E0475800D0573B /* JobTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewController.xib; sourceTree = "<group>"; };
+		BC28317F19E04E7800D0573B /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
 		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
 		BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
@@ -99,6 +107,7 @@
 				BC07F87E19D6570400CB72F0 /* Topic.swift */,
 				BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */,
 				BC95B2F919D69FAE009E0C5B /* Comment.swift */,
+				BC28317F19E04E7800D0573B /* Job.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 		BC1ECFFA19D26560007DA5EA /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC28317419E0411700D0573B /* jobs */,
 				BC1ED02F19D26D30007DA5EA /* topics */,
 				BC1ED03219D27743007DA5EA /* ApplicationController.swift */,
 			);
@@ -205,6 +215,16 @@
 				BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		BC28317419E0411700D0573B /* jobs */ = {
+			isa = PBXGroup;
+			children = (
+				BC28317519E0416100D0573B /* JobNaviController.swift */,
+				BC28317B19E0475800D0573B /* JobTableViewController.swift */,
+				BC28317C19E0475800D0573B /* JobTableViewController.xib */,
+			);
+			name = jobs;
 			sourceTree = "<group>";
 		};
 		E8EB74B0C2A445EB8A872629 /* Frameworks */ = {
@@ -308,6 +328,7 @@
 				BC1CB21719D3B29E00D3ADBD /* CommentListViewController.xib in Resources */,
 				BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */,
 				BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */,
+				BC28317E19E0475800D0573B /* JobTableViewController.xib in Resources */,
 				BC1ED03919D278D0007DA5EA /* TopicTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +413,13 @@
 				BC1ED03319D27743007DA5EA /* ApplicationController.swift in Sources */,
 				BC07F87F19D6570400CB72F0 /* Topic.swift in Sources */,
 				BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */,
+				BC28317D19E0475800D0573B /* JobTableViewController.swift in Sources */,
 				BC1ED03519D2778B007DA5EA /* TopicNaviController.swift in Sources */,
+				BC28318019E04E7800D0573B /* Job.swift in Sources */,
 				BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */,
 				BC1ED03D19D2B88D007DA5EA /* TopicCell.swift in Sources */,
 				BC1CB21619D3B29E00D3ADBD /* CommentListViewController.swift in Sources */,
+				BC28317619E0416100D0573B /* JobNaviController.swift in Sources */,
 				BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */,
 				BC1ED03819D278D0007DA5EA /* TopicTableViewController.swift in Sources */,
 				BC95B2FA19D69FAE009E0C5B /* Comment.swift in Sources */,

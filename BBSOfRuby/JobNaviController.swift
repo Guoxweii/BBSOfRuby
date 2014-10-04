@@ -1,24 +1,23 @@
 //
-//  TopicNaviController.swift
+//  JobNaviController.swift
 //  BBSOfRuby
 //
-//  Created by gxw on 14/9/24.
+//  Created by gxw on 14/10/4.
 //  Copyright (c) 2014年 gxw. All rights reserved.
 //
 
 import UIKit
 
-class TopicNaviController: UINavigationController {
+class JobNaviController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var topicsCtr = TopicTableViewController(nibName: "TopicTableViewController", bundle: nil);
-        self.viewControllers = [topicsCtr];
+        var jobsCtr = JobTableViewController(nibName: "JobTableViewController", bundle: nil)
+        self.viewControllers = [jobsCtr]
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
 }

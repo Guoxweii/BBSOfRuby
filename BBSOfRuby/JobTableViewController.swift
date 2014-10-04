@@ -1,28 +1,27 @@
 //
-//  TopicTableViewController.swift
+//  JobTableViewController.swift
 //  BBSOfRuby
 //
-//  Created by gxw on 14/9/24.
+//  Created by gxw on 14/10/4.
 //  Copyright (c) 2014年 gxw. All rights reserved.
 //
 
 import UIKit
 
-class TopicTableViewController: UITableViewController, EGORefreshTableHeaderDelegate {
+class JobTableViewController: UITableViewController, EGORefreshTableHeaderDelegate {
     
-    @IBOutlet var refreshButton: UIButton!
-    var tableData: Array<Topic>?
     var refreshHeaderView: EGORefreshTableHeaderView!
     var reloading: Bool!
+    var tableData: Array<Topic>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "精华贴"
         
-        self.tableData = nil
-        self.edgesForExtendedLayout = UIRectEdge.None;
+        self.title = "招聘贴"
+        
         self.reloading = false
+        self.edgesForExtendedLayout = UIRectEdge.None;
+        
         
         var screenHeight = self.tableView.frame.size.height
         var screenWidth = self.tableView.frame.width
@@ -30,22 +29,12 @@ class TopicTableViewController: UITableViewController, EGORefreshTableHeaderDele
         refreshHeaderView.delegate = self
         refreshHeaderView.refreshLastUpdatedDate()
         self.view.addSubview(self.refreshHeaderView)
-        
+
         let baseName = "TopicCell"
         let nib = UINib(nibName: baseName, bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: baseName)
         
-        self.refreshDataFromApi()
-    }
-    
-    func refreshDataFromApi() {
-        Topic.list({ (responseObject: AnyObject!) -> Void in
-            self.reloading = false;
-            self.refreshHeaderView.egoRefreshScrollViewDataSourceDidFinishedLoading(self.tableView)
-            
-            self.tableData = responseObject as? Array<Topic>
-            self.tableView.reloadData()
-        })
+        refreshDataFromApi()
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +58,7 @@ class TopicTableViewController: UITableViewController, EGORefreshTableHeaderDele
             var width = UIScreen.mainScreen().applicationFrame.size.width - 42//TODO 需重写
             
             var rect = title?.boundingRectWithSize(CGSize(width: width, height: 105), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil)
-
+            
             if(rect?.height < 34) {
                 return 87
             }
@@ -88,6 +77,7 @@ class TopicTableViewController: UITableViewController, EGORefreshTableHeaderDele
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let baseName = "TopicCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(baseName, forIndexPath: indexPath) as TopicCell
+        
         if let dataArray = self.tableData {
             var topic = dataArray[indexPath.row] as Topic
             
@@ -101,17 +91,6 @@ class TopicTableViewController: UITableViewController, EGORefreshTableHeaderDele
         }
         
         return cell
-    }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var commentListCtr = CommentListViewController(nibName: "CommentListViewController", bundle: nil)
-        
-        if let dataArray = self.tableData {
-             var topic = dataArray[indexPath.row]
-            commentListCtr.topicId = topic.id
-        }
-        
-        self.navigationController?.pushViewController(commentListCtr, animated: true)
     }
     
     func egoRefreshTableHeaderDidTriggerRefresh(view: EGORefreshTableHeaderView!) {
@@ -136,4 +115,24 @@ class TopicTableViewController: UITableViewController, EGORefreshTableHeaderDele
         self.refreshHeaderView.egoRefreshScrollViewDidEndDragging(scrollView)
     }
     
+    func refreshDataFromApi() {
+        Job.list({ (responseObject: AnyObject!) -> Void in
+            self.reloading = false;
+            self.refreshHeaderView.egoRefreshScrollViewDataSourceDidFinishedLoading(self.tableView)
+            
+            self.tableData = responseObject as? Array<Topic>
+            self.tableView.reloadData()
+        })
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var commentListCtr = CommentListViewController(nibName: "CommentListViewController", bundle: nil)
+        
+        if let dataArray = self.tableData {
+            var topic = dataArray[indexPath.row]
+            commentListCtr.topicId = topic.id
+        }
+        
+        self.navigationController?.pushViewController(commentListCtr, animated: true)
+    }
 }

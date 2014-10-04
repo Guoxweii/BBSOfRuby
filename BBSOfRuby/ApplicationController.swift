@@ -14,7 +14,14 @@ class ApplicationController: UITabBarController {
         super.viewDidLoad()
 
         var TopicBaseCtr = TopicNaviController()
-        self.viewControllers = [TopicBaseCtr];
+        TopicBaseCtr.tabBarItem.title = "topic"
+        TopicBaseCtr.tabBarItem.image = UIImage(named: "topics.png")
+        
+        var JobBaseCtr = JobNaviController()
+        JobBaseCtr.tabBarItem.title = "job"
+        JobBaseCtr.tabBarItem.image = UIImage(named: "jobs.png")
+        
+        self.viewControllers = [TopicBaseCtr, JobBaseCtr];
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,15 +29,4 @@ class ApplicationController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
