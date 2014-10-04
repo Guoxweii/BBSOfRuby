@@ -25,7 +25,6 @@
 		BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */; };
 		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
 		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
-		BC5FEF7319D8EF3100BF9BDA /* FirstSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5FEF7219D8EF3100BF9BDA /* FirstSpec.m */; };
 		BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */; };
 		BC95B2FA19D69FAE009E0C5B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F919D69FAE009E0C5B /* Comment.swift */; };
 		BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0ACE919D3EBD3002094AA /* CommentCell.swift */; };
@@ -67,7 +66,6 @@
 		BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-headers.h"; sourceTree = "<group>"; };
 		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
 		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
-		BC5FEF7219D8EF3100BF9BDA /* FirstSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstSpec.m; sourceTree = "<group>"; };
 		BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
 		BC95B2F919D69FAE009E0C5B /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BCE0ACE919D3EBD3002094AA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 		BC1022F419D1C13400C68F93 = {
 			isa = PBXGroup;
 			children = (
-				BC5FEF7119D8EF1700BF9BDA /* spec */,
 				BC1022FF19D1C13400C68F93 /* BBSOfRuby */,
 				BC10231519D1C13400C68F93 /* BBSOfRubyTests */,
 				BC1022FE19D1C13400C68F93 /* Products */,
@@ -208,14 +205,6 @@
 				BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */,
 			);
 			name = views;
-			sourceTree = "<group>";
-		};
-		BC5FEF7119D8EF1700BF9BDA /* spec */ = {
-			isa = PBXGroup;
-			children = (
-				BC5FEF7219D8EF3100BF9BDA /* FirstSpec.m */,
-			);
-			name = spec;
 			sourceTree = "<group>";
 		};
 		E8EB74B0C2A445EB8A872629 /* Frameworks */ = {
@@ -419,7 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC10231919D1C13400C68F93 /* BBSOfRubyTests.swift in Sources */,
-				BC5FEF7319D8EF3100BF9BDA /* FirstSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
