@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		605FDFF3B98B41D2A18C0261 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D485F6C769694FB18C17FC31 /* libPods.a */; };
-		7A504052C7D04DBF909E40CB /* libPods-BBSOfRubyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54400DDA45334D7497C11AC8 /* libPods-BBSOfRubyTests.a */; };
 		BC07F87F19D6570400CB72F0 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07F87E19D6570400CB72F0 /* Topic.swift */; };
 		BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10230219D1C13400C68F93 /* AppDelegate.swift */; };
 		BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10230919D1C13400C68F93 /* Images.xcassets */; };
 		BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10230B19D1C13400C68F93 /* LaunchScreen.xib */; };
-		BC10231919D1C13400C68F93 /* BBSOfRubyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */; };
 		BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC10232819D24A2000C68F93 /* Default-568h@2x.png */; };
 		BC1CB21619D3B29E00D3ADBD /* CommentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1CB21419D3B29E00D3ADBD /* CommentListViewController.swift */; };
 		BC1CB21719D3B29E00D3ADBD /* CommentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1CB21519D3B29E00D3ADBD /* CommentListViewController.xib */; };
@@ -35,29 +33,15 @@
 		BCE0ACEC19D3EBD3002094AA /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BC10231319D1C13400C68F93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BC1022F519D1C13400C68F93 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC1022FC19D1C13400C68F93;
-			remoteInfo = BBSOfRuby;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		54400DDA45334D7497C11AC8 /* libPods-BBSOfRubyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BBSOfRubyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		910ED7D8A70D4B21864C0380 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBSOfRubyTests.xcconfig"; path = "Pods/Pods-BBSOfRubyTests.xcconfig"; sourceTree = "<group>"; };
+		6273296468415625D471ED4A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BC07F87E19D6570400CB72F0 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		BC1022FD19D1C13400C68F93 /* BBSOfRuby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBSOfRuby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC10230119D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC10230219D1C13400C68F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC10230919D1C13400C68F93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC10230C19D1C13400C68F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BC10231219D1C13400C68F93 /* BBSOfRubyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBSOfRubyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC10231719D1C13400C68F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBSOfRubyTests.swift; sourceTree = "<group>"; };
 		BC10232819D24A2000C68F93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC1CB21419D3B29E00D3ADBD /* CommentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentListViewController.swift; sourceTree = "<group>"; };
 		BC1CB21519D3B29E00D3ADBD /* CommentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentListViewController.xib; sourceTree = "<group>"; };
@@ -78,6 +62,7 @@
 		BC95B2F919D69FAE009E0C5B /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BCE0ACE919D3EBD3002094AA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		BCE0ACEA19D3EBD3002094AA /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		CF9D14193FF0032A2A04B6F0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D485F6C769694FB18C17FC31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,14 +72,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				605FDFF3B98B41D2A18C0261 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC10230F19D1C13400C68F93 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A504052C7D04DBF909E40CB /* libPods-BBSOfRubyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,11 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				BC1022FF19D1C13400C68F93 /* BBSOfRuby */,
-				BC10231519D1C13400C68F93 /* BBSOfRubyTests */,
 				BC1022FE19D1C13400C68F93 /* Products */,
-				910ED7D8A70D4B21864C0380 /* Pods.xcconfig */,
 				E8EB74B0C2A445EB8A872629 /* Frameworks */,
-				AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */,
+				E67B2EE3829371CC0C4DFE03 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				BC1022FD19D1C13400C68F93 /* BBSOfRuby.app */,
-				BC10231219D1C13400C68F93 /* BBSOfRubyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,23 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				BC10230119D1C13400C68F93 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BC10231519D1C13400C68F93 /* BBSOfRubyTests */ = {
-			isa = PBXGroup;
-			children = (
-				BC10231819D1C13400C68F93 /* BBSOfRubyTests.swift */,
-				BC10231619D1C13400C68F93 /* Supporting Files */,
-			);
-			path = BBSOfRubyTests;
-			sourceTree = "<group>";
-		};
-		BC10231619D1C13400C68F93 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BC10231719D1C13400C68F93 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -227,6 +184,15 @@
 			name = jobs;
 			sourceTree = "<group>";
 		};
+		E67B2EE3829371CC0C4DFE03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6273296468415625D471ED4A /* Pods.debug.xcconfig */,
+				CF9D14193FF0032A2A04B6F0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8EB74B0C2A445EB8A872629 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,26 +224,6 @@
 			productReference = BC1022FD19D1C13400C68F93 /* BBSOfRuby.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC10231119D1C13400C68F93 /* BBSOfRubyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BC10231F19D1C13400C68F93 /* Build configuration list for PBXNativeTarget "BBSOfRubyTests" */;
-			buildPhases = (
-				44ED4192299A4124A86C281F /* Check Pods Manifest.lock */,
-				BC10230E19D1C13400C68F93 /* Sources */,
-				BC10230F19D1C13400C68F93 /* Frameworks */,
-				BC10231019D1C13400C68F93 /* Resources */,
-				F46D9311D757437198F44CCA /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BC10231419D1C13400C68F93 /* PBXTargetDependency */,
-			);
-			name = BBSOfRubyTests;
-			productName = BBSOfRubyTests;
-			productReference = BC10231219D1C13400C68F93 /* BBSOfRubyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -290,10 +236,6 @@
 					BC1022FC19D1C13400C68F93 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 5A5VHB7889;
-					};
-					BC10231119D1C13400C68F93 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = BC1022FC19D1C13400C68F93;
 					};
 				};
 			};
@@ -311,7 +253,6 @@
 			projectRoot = "";
 			targets = (
 				BC1022FC19D1C13400C68F93 /* BBSOfRuby */,
-				BC10231119D1C13400C68F93 /* BBSOfRubyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,31 +274,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC10231019D1C13400C68F93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44ED4192299A4124A86C281F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		70FDC95CAC8A43D2A266D9DB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,22 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F46D9311D757437198F44CCA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-BBSOfRubyTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F572E1461DA44CA4BB59A597 /* Check Pods Manifest.lock */ = {
@@ -427,23 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC10230E19D1C13400C68F93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BC10231919D1C13400C68F93 /* BBSOfRubyTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BC10231419D1C13400C68F93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BC1022FC19D1C13400C68F93 /* BBSOfRuby */;
-			targetProxy = BC10231319D1C13400C68F93 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC10230B19D1C13400C68F93 /* LaunchScreen.xib */ = {
@@ -536,7 +424,7 @@
 		};
 		BC10231D19D1C13400C68F93 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 910ED7D8A70D4B21864C0380 /* Pods.xcconfig */;
+			baseConfigurationReference = 6273296468415625D471ED4A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -550,7 +438,7 @@
 		};
 		BC10231E19D1C13400C68F93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 910ED7D8A70D4B21864C0380 /* Pods.xcconfig */;
+			baseConfigurationReference = CF9D14193FF0032A2A04B6F0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -559,47 +447,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BBSOfRuby/app-Bridging-headers.h";
-			};
-			name = Release;
-		};
-		BC10232019D1C13400C68F93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BBSOfRubyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBSOfRuby.app/BBSOfRuby";
-			};
-			name = Debug;
-		};
-		BC10232119D1C13400C68F93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAA5DF115B764A18B55BA4B2 /* Pods-BBSOfRubyTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BBSOfRubyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBSOfRuby.app/BBSOfRuby";
 			};
 			name = Release;
 		};
@@ -620,15 +467,6 @@
 			buildConfigurations = (
 				BC10231D19D1C13400C68F93 /* Debug */,
 				BC10231E19D1C13400C68F93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BC10231F19D1C13400C68F93 /* Build configuration list for PBXNativeTarget "BBSOfRubyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC10232019D1C13400C68F93 /* Debug */,
-				BC10232119D1C13400C68F93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
