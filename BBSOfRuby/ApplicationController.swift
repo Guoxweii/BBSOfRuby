@@ -14,11 +14,11 @@ class ApplicationController: UITabBarController {
         super.viewDidLoad()
 
         var TopicBaseCtr = TopicNaviController()
-        TopicBaseCtr.tabBarItem.title = "topic"
+        TopicBaseCtr.tabBarItem.title = "时间线"
         TopicBaseCtr.tabBarItem.image = UIImage(named: "topics.png")
         
         var JobBaseCtr = JobNaviController()
-        JobBaseCtr.tabBarItem.title = "job"
+        JobBaseCtr.tabBarItem.title = "招聘ing"
         JobBaseCtr.tabBarItem.image = UIImage(named: "jobs.png")
         
         self.viewControllers = [TopicBaseCtr, JobBaseCtr];
