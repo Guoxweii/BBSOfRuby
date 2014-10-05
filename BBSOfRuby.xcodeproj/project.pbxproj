@@ -12,7 +12,6 @@
 		BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10230219D1C13400C68F93 /* AppDelegate.swift */; };
 		BC10230A19D1C13400C68F93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10230919D1C13400C68F93 /* Images.xcassets */; };
 		BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10230B19D1C13400C68F93 /* LaunchScreen.xib */; };
-		BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC10232819D24A2000C68F93 /* Default-568h@2x.png */; };
 		BC1CB21619D3B29E00D3ADBD /* CommentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1CB21419D3B29E00D3ADBD /* CommentListViewController.swift */; };
 		BC1CB21719D3B29E00D3ADBD /* CommentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1CB21519D3B29E00D3ADBD /* CommentListViewController.xib */; };
 		BC1ED03319D27743007DA5EA /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1ED03219D27743007DA5EA /* ApplicationController.swift */; };
@@ -25,6 +24,7 @@
 		BC28317D19E0475800D0573B /* JobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28317B19E0475800D0573B /* JobTableViewController.swift */; };
 		BC28317E19E0475800D0573B /* JobTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC28317C19E0475800D0573B /* JobTableViewController.xib */; };
 		BC28318019E04E7800D0573B /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28317F19E04E7800D0573B /* Job.swift */; };
+		BC28318419E0E55F00D0573B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC28318319E0E55F00D0573B /* Default-568h@2x.png */; };
 		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
 		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
 		BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */; };
@@ -42,7 +42,6 @@
 		BC10230219D1C13400C68F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC10230919D1C13400C68F93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BC10230C19D1C13400C68F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		BC10232819D24A2000C68F93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC1CB21419D3B29E00D3ADBD /* CommentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentListViewController.swift; sourceTree = "<group>"; };
 		BC1CB21519D3B29E00D3ADBD /* CommentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentListViewController.xib; sourceTree = "<group>"; };
 		BC1ED03219D27743007DA5EA /* ApplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		BC28317B19E0475800D0573B /* JobTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
 		BC28317C19E0475800D0573B /* JobTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewController.xib; sourceTree = "<group>"; };
 		BC28317F19E04E7800D0573B /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		BC28318319E0E55F00D0573B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
 		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
 		BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		BC1ECFF919D26542007DA5EA /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				BC10232819D24A2000C68F93 /* Default-568h@2x.png */,
+				BC28318319E0E55F00D0573B /* Default-568h@2x.png */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -262,9 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC10232919D24A2000C68F93 /* Default-568h@2x.png in Resources */,
 				BC10230D19D1C13400C68F93 /* LaunchScreen.xib in Resources */,
 				BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */,
+				BC28318419E0E55F00D0573B /* Default-568h@2x.png in Resources */,
 				BCE0ACEC19D3EBD3002094AA /* CommentCell.xib in Resources */,
 				BC1CB21719D3B29E00D3ADBD /* CommentListViewController.xib in Resources */,
 				BC1ED03E19D2B88D007DA5EA /* TopicCell.xib in Resources */,
