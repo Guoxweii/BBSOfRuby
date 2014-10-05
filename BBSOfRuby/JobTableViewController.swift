@@ -17,7 +17,7 @@ class JobTableViewController: UITableViewController, EGORefreshTableHeaderDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "招聘贴"
+        self.navigationItem.title = "招聘贴"
         
         self.reloading = false
         self.edgesForExtendedLayout = UIRectEdge.None;

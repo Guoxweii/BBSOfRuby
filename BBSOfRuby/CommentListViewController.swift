@@ -15,7 +15,7 @@ class CommentListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "提问详情"
+        self.title = "详情"
 
         let headerName = "TopicHeaderCell"
         let nib = UINib(nibName: headerName, bundle: nil)
