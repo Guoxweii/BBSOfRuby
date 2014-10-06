@@ -51,6 +51,7 @@
 		BC1ED03B19D2B88D007DA5EA /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		BC1ED03C19D2B88D007DA5EA /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
 		BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-headers.h"; sourceTree = "<group>"; };
+		BC25715219E17D61006D7D21 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		BC28317519E0416100D0573B /* JobNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobNaviController.swift; sourceTree = "<group>"; };
 		BC28317B19E0475800D0573B /* JobTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewController.swift; sourceTree = "<group>"; };
 		BC28317C19E0475800D0573B /* JobTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewController.xib; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 				BC1ECFF919D26542007DA5EA /* resources */,
 				BC10230019D1C13400C68F93 /* Supporting Files */,
 				BC1ED04319D2CF4E007DA5EA /* app-Bridging-headers.h */,
+				BC25715219E17D61006D7D21 /* MyPlayground.playground */,
 			);
 			path = BBSOfRuby;
 			sourceTree = "<group>";

@@ -55,7 +55,7 @@ class JobTableViewController: UITableViewController, EGORefreshTableHeaderDelega
             var title = topic.title
             
             var attributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 15 )]
-            var width = UIScreen.mainScreen().applicationFrame.size.width - 42//TODO 需重写
+            var width = UIScreen.mainScreen().applicationFrame.size.width - 44//TODO 需重写
             
             var rect = title?.boundingRectWithSize(CGSize(width: width, height: 105), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil)
             

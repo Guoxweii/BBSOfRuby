@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -15,7 +14,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ0-sd-D9E">
-                        <rect key="frame" x="13" y="8" width="278" height="17"/>
+                        <rect key="frame" x="13" y="8" width="276" height="17"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="17" id="zwn-j4-Qd9"/>
                         </constraints>
@@ -24,14 +23,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="OeF-Mz-im4">
-                        <rect key="frame" x="325" y="8" width="24" height="24"/>
+                        <rect key="frame" x="323" y="8" width="26" height="26"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="24" id="Pfl-GQ-IPU"/>
-                            <constraint firstAttribute="width" constant="24" id="WlB-s9-TWR"/>
+                            <constraint firstAttribute="height" constant="26" id="Pfl-GQ-IPU"/>
+                            <constraint firstAttribute="width" constant="26" id="WlB-s9-TWR"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="12"/>
+                                <integer key="value" value="13"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
