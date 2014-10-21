@@ -55,11 +55,12 @@ class JobTableViewController: UITableViewController, EGORefreshTableHeaderDelega
             var title = topic.title
             
             var attributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 15 )]
+            var font = UIFont(name: "HelveticaNeue", size: 15 )
             var width = UIScreen.mainScreen().applicationFrame.size.width - 44//TODO 需重写
             
-            var rect = title?.boundingRectWithSize(CGSize(width: width, height: 105), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil)
+            var height = Helper.heightForLabel(title!, font: font!, width: width)
             
-            if(rect?.height < 34) {
+            if(height < 34) {
                 return 87
             }
         }
@@ -104,7 +105,7 @@ class JobTableViewController: UITableViewController, EGORefreshTableHeaderDelega
     }
     
     func egoRefreshTableHeaderDataSourceLastUpdated(view: EGORefreshTableHeaderView!) -> NSDate! {
-        return NSDate.date()
+        return NSDate()
     }
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {

@@ -108,14 +108,12 @@ class CommentListViewController: UITableViewController {
         var width = UIScreen.mainScreen().applicationFrame.size.width - 34
         
         var title = topic?.title
-        var titleattributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 15 )]
-        var titleRect = title?.boundingRectWithSize(CGSize(width: width, height: 10000), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: titleattributes, context: nil)
-        var titleHeight = titleRect?.height as CGFloat!
+        var titleFont = UIFont(name: "HelveticaNeue", size: 15 )
+        var titleHeight = Helper.heightForLabel(title!, font: titleFont!, width: width)
         
         var body = topic?.body
-        var bodyattributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 14 )]
-        var bodyRect = body?.boundingRectWithSize(CGSize(width: width, height: 10000), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: bodyattributes, context: nil)
-        var bodyHeight = bodyRect?.height as CGFloat!
+        var bodyFont = UIFont(name: "HelveticaNeue", size: 14 )
+        var bodyHeight = Helper.heightForLabel(body!, font: bodyFont!, width: width)
         
         return titleHeight + bodyHeight + 75
     }
@@ -132,9 +130,8 @@ class CommentListViewController: UITableViewController {
             var comment = comments[indexPath.row - 1]
             var body = comment.body
             
-            var bodyattributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 14 )]
-            var bodyRect = body?.boundingRectWithSize(CGSize(width: width, height: 10000), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: bodyattributes, context: nil)
-            var bodyHeight = bodyRect?.height as CGFloat!
+            var bodyFont = UIFont(name: "HelveticaNeue", size: 14 )
+            var bodyHeight = Helper.heightForLabel(body!, font: bodyFont!, width: width)
             
             return bodyHeight + 60
         }

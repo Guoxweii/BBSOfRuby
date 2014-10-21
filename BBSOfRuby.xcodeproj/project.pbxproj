@@ -27,6 +27,7 @@
 		BC28318419E0E55F00D0573B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC28318319E0E55F00D0573B /* Default-568h@2x.png */; };
 		BC5478ED19D3CC8000C8AEF7 /* TopicHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */; };
 		BC5478EE19D3CC8000C8AEF7 /* TopicHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */; };
+		BC8D457319F6A48E00A518C3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8D457219F6A48E00A518C3 /* Helper.swift */; };
 		BC95B2F819D6692D009E0C5B /* ActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */; };
 		BC95B2FA19D69FAE009E0C5B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95B2F919D69FAE009E0C5B /* Comment.swift */; };
 		BCE0ACEB19D3EBD3002094AA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0ACE919D3EBD3002094AA /* CommentCell.swift */; };
@@ -59,6 +60,7 @@
 		BC28318319E0E55F00D0573B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC5478EB19D3CC8000C8AEF7 /* TopicHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderCell.swift; sourceTree = "<group>"; };
 		BC5478EC19D3CC8000C8AEF7 /* TopicHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicHeaderCell.xib; sourceTree = "<group>"; };
+		BC8D457219F6A48E00A518C3 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRecord.swift; sourceTree = "<group>"; };
 		BC95B2F919D69FAE009E0C5B /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BCE0ACE919D3EBD3002094AA /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				BC95B2F719D6692D009E0C5B /* ActiveRecord.swift */,
 				BC95B2F919D69FAE009E0C5B /* Comment.swift */,
 				BC28317F19E04E7800D0573B /* Job.swift */,
+				BC8D457219F6A48E00A518C3 /* Helper.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				BC1ED03319D27743007DA5EA /* ApplicationController.swift in Sources */,
 				BC07F87F19D6570400CB72F0 /* Topic.swift in Sources */,
+				BC8D457319F6A48E00A518C3 /* Helper.swift in Sources */,
 				BC10230319D1C13400C68F93 /* AppDelegate.swift in Sources */,
 				BC28317D19E0475800D0573B /* JobTableViewController.swift in Sources */,
 				BC1ED03519D2778B007DA5EA /* TopicNaviController.swift in Sources */,
@@ -434,6 +438,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "17294697-CC63-45D6-ADC5-25622656001B";
 				SWIFT_OBJC_BRIDGING_HEADER = "BBSOfRuby/app-Bridging-headers.h";
 			};
 			name = Debug;
@@ -448,6 +453,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "17294697-CC63-45D6-ADC5-25622656001B";
 				SWIFT_OBJC_BRIDGING_HEADER = "BBSOfRuby/app-Bridging-headers.h";
 			};
 			name = Release;

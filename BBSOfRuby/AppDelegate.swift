@@ -29,7 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setDefaultSetting() {
         UITabBar.appearance().barTintColor = UIColor(red: 0.94, green: 0.94, blue: 0.96, alpha: 1)
-        UITabBarItem.appearance().setTitleTextAttributes(NSDictionary(objects: [UIFont(name: "Helvetica", size: 12.0)], forKeys: [NSFontAttributeName]), forState: UIControlState.Normal)
+        
+        let font: UIFont! = UIFont(name: "Helvetica", size: 12.0)
+        let selectedAttributes: NSDictionary! = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor(red:0.13, green:0.55, blue:0.83, alpha:1.0)]
+        
+        UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, forState: UIControlState.Normal)
     }
 
     func applicationWillResignActive(application: UIApplication) {

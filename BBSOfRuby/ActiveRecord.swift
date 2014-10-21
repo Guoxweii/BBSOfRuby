@@ -22,18 +22,15 @@ class ActiveRecord: NSObject {
     }
     
     class func get(url: String, success: (AnyObject!) -> Void) -> Void {
-        let url = NSURL(string: url)
-        var request = NSURLRequest(URL: url)
-        var operation = AFHTTPRequestOperation(request: request)
-        operation.responseSerializer = AFJSONResponseSerializer()
-        operation.setCompletionBlockWithSuccess(
-            { (operation: AFHTTPRequestOperation!,responseObject: AnyObject!) -> Void in
+        let manager = AFHTTPRequestOperationManager()
+        manager.GET(url,
+            parameters: nil,
+            success: { (operation: AFHTTPRequestOperation!,responseObject: AnyObject!) in
                 success(responseObject)
             },
-            failure: {(operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                println("The Error Happen: \(error)")
+            failure: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+                println("Error: " + error.localizedDescription)
             }
         )
-        NSOperationQueue.mainQueue().addOperation(operation)
     }
 }
