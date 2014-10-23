@@ -433,12 +433,12 @@
 			baseConfigurationReference = 6273296468415625D471ED4A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = BBSOfRuby/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "17294697-CC63-45D6-ADC5-25622656001B";
+				PROVISIONING_PROFILE = "f0bc402c-f840-4d93-acbb-c8a2a8419135";
 				SWIFT_OBJC_BRIDGING_HEADER = "BBSOfRuby/app-Bridging-headers.h";
 			};
 			name = Debug;
@@ -448,12 +448,12 @@
 			baseConfigurationReference = CF9D14193FF0032A2A04B6F0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = BBSOfRuby/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "17294697-CC63-45D6-ADC5-25622656001B";
+				PROVISIONING_PROFILE = "79aadd5d-6494-4c4e-98f2-000279c9154b";
 				SWIFT_OBJC_BRIDGING_HEADER = "BBSOfRuby/app-Bridging-headers.h";
 			};
 			name = Release;
